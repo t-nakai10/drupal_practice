@@ -1,0 +1,52 @@
+uuid: 683e5881-26b7-4f5b-8893-85350e7af556
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.datetime_to_timestamp.body
+    - field.field.node.datetime_to_timestamp.field_datetime
+    - field.field.node.datetime_to_timestamp.field_timestamp
+    - node.type.datetime_to_timestamp
+  module:
+    - datetime
+    - text
+    - user
+id: node.datetime_to_timestamp.default
+targetEntityType: node
+bundle: datetime_to_timestamp
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_datetime:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_timestamp:
+    type: timestamp
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  langcode: true

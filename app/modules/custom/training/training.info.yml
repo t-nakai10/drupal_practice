@@ -1,0 +1,6 @@
+name: リビジョン確認
+type: module
+description: リビジョンの確認
+package: Custom
+core_version_requirement: ^10
+configure: training.admin_settings

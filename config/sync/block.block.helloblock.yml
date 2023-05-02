@@ -1,0 +1,21 @@
+uuid: 7b03d2d3-c3be-4708-95fe-d6b31ee8a59a
+langcode: ja
+status: true
+dependencies:
+  module:
+    - training
+  theme:
+    - olivero
+id: helloblock
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: hello_block
+settings:
+  id: hello_block
+  label: 'Hello Block'
+  label_display: visible
+  provider: training
+  hello_block_name: toshiaa
+visibility: {  }

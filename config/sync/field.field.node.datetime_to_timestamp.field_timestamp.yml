@@ -1,0 +1,21 @@
+uuid: 7a4f32f0-5d9e-4b9d-ac65-f1cb82319536
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timestamp
+    - node.type.datetime_to_timestamp
+id: node.datetime_to_timestamp.field_timestamp
+field_name: field_timestamp
+entity_type: node
+bundle: datetime_to_timestamp
+label: タイムスタンプ
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1681101396
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

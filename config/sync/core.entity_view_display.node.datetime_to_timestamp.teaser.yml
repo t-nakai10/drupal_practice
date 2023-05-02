@@ -1,0 +1,36 @@
+uuid: 1dbeb35d-53d2-4ed1-ae15-81455aaeca72
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.datetime_to_timestamp.body
+    - field.field.node.datetime_to_timestamp.field_datetime
+    - field.field.node.datetime_to_timestamp.field_timestamp
+    - node.type.datetime_to_timestamp
+  module:
+    - text
+    - user
+id: node.datetime_to_timestamp.teaser
+targetEntityType: node
+bundle: datetime_to_timestamp
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  breadcrumbs: true
+  field_datetime: true
+  field_timestamp: true
+  langcode: true

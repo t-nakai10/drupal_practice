@@ -1,0 +1,23 @@
+uuid: 922768af-6be3-4073-869d-9d3c289475f8
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.datetime_to_timestamp
+  module:
+    - text
+id: node.datetime_to_timestamp.body
+field_name: body
+entity_type: node
+bundle: datetime_to_timestamp
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

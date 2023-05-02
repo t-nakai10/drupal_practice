@@ -1,0 +1,11 @@
+uuid: ef869db7-bc76-4dfa-9ce8-b92026487d2f
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.datetime_to_timestamp
+id: node.datetime_to_timestamp
+target_entity_type_id: node
+target_bundle: datetime_to_timestamp
+default_langcode: site_default
+language_alterable: false

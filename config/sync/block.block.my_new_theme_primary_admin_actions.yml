@@ -1,0 +1,20 @@
+uuid: ce79784a-faf1-4138-9db3-1b19d38cb2b7
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - my_new_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: my_new_theme_primary_admin_actions
+theme: my_new_theme
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: プライマリ管理アクション
+  label_display: '0'
+  provider: core
+visibility: {  }

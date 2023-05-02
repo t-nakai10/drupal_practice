@@ -1,0 +1,22 @@
+uuid: 72f7ff8a-532b-4c1b-be36-049855d4060c
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - my_new_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: my_new_theme_primary_local_tasks
+theme: my_new_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: プライマリータブ
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

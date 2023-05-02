@@ -1,0 +1,22 @@
+uuid: 81ef69e8-42ab-4c7e-b3ad-520aae4a4668
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_new_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: my_new_theme_content
+theme: my_new_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: メインページコンテンツ
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: e941a5a9-b099-42ea-8755-8f6538aeabe9
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datetime
+    - node.type.datetime_to_timestamp
+  module:
+    - datetime
+id: node.datetime_to_timestamp.field_datetime
+field_name: field_datetime
+entity_type: node
+bundle: datetime_to_timestamp
+label: 日付
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

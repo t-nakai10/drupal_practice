@@ -1,0 +1,16 @@
+{% for key,value in data %}
+  <strong>{{ key }}:</strong> {{ value }}<br>
+{% endfor %}
+
+{% set string = '&"<>' %}
+{% trans %}
+  Escaped: {{ string }} <br>
+{% endtrans %}
+{% trans %}
+  Raw: {{ string|raw }}<br>
+{% endtrans %}
+{% trans %}
+  Placeholder: {{ string|placeholder }}<br>
+{% endtrans %}
+
+{% trans 'May' with {'context': 'Long month name', 'langcode': 'ja'} %}

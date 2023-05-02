@@ -1,0 +1,14 @@
+uuid: ea7ec9d2-4638-4919-8641-b21166326c83
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: k3aUaZXGDuhkek2TZIee0PApOPTvYZLadziekdyHA5A
+id: user_search
+label: ユーザー
+path: user
+weight: 0
+plugin: user_search
+configuration: {  }

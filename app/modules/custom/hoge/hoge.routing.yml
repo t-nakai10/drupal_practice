@@ -1,0 +1,6 @@
+hoge.training_route:
+  path: '/hoge'
+  defaults:
+    _controller: '\Drupal\hoge\Controller\HogeController::content'
+  requirements:
+    _custom_access: '\Drupal\hoge\Controller\HogeController::access'

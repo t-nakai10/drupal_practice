@@ -19,3 +19,25 @@ function my_new_theme_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function my_new_theme_preprocess_node(&$variables) {
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'article')
+    ->accessCheck(FALSE)
+    ->sort('created', 'DESC')
+    ->execute();
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadMultiple($nids);
+  $output = fopen('./test.csv', 'w');
+  foreach ($nodes as $key => $node) {
+    $data = [
+      'title' => $node->getTitle(),
+      'url' => $node->toUrl()->toString(),
+      'tag' => $node->field_tags?->entity?->getName(),
+    ];
+    fputcsv($output, $data);
+  }
+  fclose($output);
+}

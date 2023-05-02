@@ -20,3 +20,7 @@ libraries-extend:
     - my_new_theme/progress
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.0.2'
+regions:
+  header: Header
+  content: Content
+  footer: Footer

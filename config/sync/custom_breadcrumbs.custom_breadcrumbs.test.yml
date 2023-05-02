@@ -1,0 +1,15 @@
+uuid: 2abb04a6-345b-4f96-b311-689d5967c644
+langcode: ja
+status: true
+dependencies: {  }
+id: test
+label: test
+description: test
+entityType: node
+entityBundle: article
+language: und
+breadcrumbPaths: /article
+breadcrumbTitles: 記事一覧ページ
+type: '1'
+pathPattern: ''
+extraCacheContexts: ''

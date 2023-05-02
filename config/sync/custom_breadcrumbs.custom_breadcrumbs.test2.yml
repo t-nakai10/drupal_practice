@@ -1,0 +1,15 @@
+uuid: 98b429c0-12aa-40bf-974c-a1f73002d727
+langcode: ja
+status: true
+dependencies: {  }
+id: test2
+label: test2
+description: ''
+entityType: _none
+entityBundle: _none
+language: und
+breadcrumbPaths: "/hoge\r\n/hoge/fuga\r\n/hoge/fuga/piyo"
+breadcrumbTitles: "HOGE\r\nFUGA\r\nPIYO"
+type: '2'
+pathPattern: /test
+extraCacheContexts: ''

@@ -1,0 +1,22 @@
+training.marucha:
+  path: '/marucha'
+  defaults:
+    _form: 'Drupal\training\Form\InfoForm'
+    _title: 'title'
+  requirements:
+    _permission: 'access content'
+training.admin_settings:
+  path: '/marucha/conf'
+  defaults:
+    _form: '\Drupal\training\Form\ConfForm'
+    _title: 'test'
+  requirements:
+    _permission: 'administer site configuration'
+training.delete:
+  path: /marucha/{id}/delete
+  defaults:
+    _form: '\Drupal\training\Form\ConfirmForm'
+    _title: 'test'
+  requirements:
+    _permission: 'administer site configuration'
+    id: ^\d+$
