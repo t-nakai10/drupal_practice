@@ -2,5 +2,13 @@ hoge.training_route:
   path: '/hoge'
   defaults:
     _controller: '\Drupal\hoge\Controller\HogeController::content'
+    _title: 'コントローラーとカスタムアクセスの確認'
   requirements:
     _custom_access: '\Drupal\hoge\Controller\HogeController::access'
+hoge.batch_form:
+  path: '/hoge/batch'
+  defaults:
+    _form: '\Drupal\hoge\Form\HogeBatchForm'
+    _title: '一括更新フォーム練習'
+  requirements:
+    _permission: 'access content'
