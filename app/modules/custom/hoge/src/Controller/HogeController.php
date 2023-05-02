@@ -5,6 +5,7 @@ namespace Drupal\hoge\Controller;
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Session\AccountInterface;
+use Drupal\node\NodeInterface;
 
 /**
  * hoge コントローラー.
@@ -14,9 +15,12 @@ class HogeController extends ControllerBase {
   /**
    * レンダリング配列を返却.
    */
-  public function content() {
+  public function content(NodeInterface $node) {
+    $title = $node->getTitle();
+    $body = $node->body->value;
     return [
-      '#markup' => $this->t('Hello, World!'),
+      '#type' => 'markup',
+      '#markup' => "<h1>$title</h1><div>$body</div>",
     ];
   }
 

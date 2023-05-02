@@ -1,10 +1,13 @@
 hoge.training_route:
-  path: '/hoge'
+  path: '/hoge/{node}'
   defaults:
     _controller: '\Drupal\hoge\Controller\HogeController::content'
     _title: 'コントローラーとカスタムアクセスの確認'
   requirements:
-    _custom_access: '\Drupal\hoge\Controller\HogeController::access'
+    _permission: 'access content'
+    # _custom_access: '\Drupal\hoge\Controller\HogeController::access'
+    # _entity_access: node.view
+    node: \d+
 hoge.batch_form:
   path: '/hoge/batch'
   defaults:
