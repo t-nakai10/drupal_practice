@@ -1,6 +1,6 @@
 uuid: 7b03d2d3-c3be-4708-95fe-d6b31ee8a59a
 langcode: ja
-status: true
+status: false
 dependencies:
   module:
     - training
