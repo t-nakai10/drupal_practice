@@ -1,0 +1,5 @@
+services:
+  hoge.hoge_subscriber:
+    class: Drupal\hoge\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
