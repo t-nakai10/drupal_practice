@@ -3,3 +3,7 @@ services:
     class: Drupal\hoge\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
+  hoge.services_access_checker:
+    class: Drupal\hoge\Access\HogeAccessCheck
+    tags:
+      - { name: access_check, applies_to: _hoge_custom_access }

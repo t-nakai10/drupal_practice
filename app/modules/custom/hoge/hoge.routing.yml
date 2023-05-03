@@ -15,3 +15,10 @@ hoge.batch_form:
     _title: '一括更新フォーム練習'
   requirements:
     _permission: 'access content'
+hoge.hoge_access:
+  path: '/hoge/access/{node}'
+  defaults:
+    _controller: '\Drupal\hoge\Controller\HogeController::content'
+    _title: '動的アクセスチェック練習'
+  requirements:
+    _hoge_custom_access: 'TRUE'
