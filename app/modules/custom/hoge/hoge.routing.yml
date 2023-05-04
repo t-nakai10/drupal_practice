@@ -4,8 +4,8 @@ hoge.training_route:
     _controller: '\Drupal\hoge\Controller\HogeController::content'
     _title: 'コントローラーとカスタムアクセスの確認'
   requirements:
-    _permission: 'access content'
-    # _custom_access: '\Drupal\hoge\Controller\HogeController::access'
+    # _permission: 'access content'
+    _custom_access: '\Drupal\hoge\Controller\HogeController::access'
     # _entity_access: node.view
     node: \d+
 hoge.batch_form:
