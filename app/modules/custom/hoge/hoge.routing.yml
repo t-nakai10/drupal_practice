@@ -22,3 +22,15 @@ hoge.hoge_access:
     _title: '動的アクセスチェック練習'
   requirements:
     _hoge_custom_access: 'TRUE'
+
+hoge.param_form:
+  path: '/hoge/param/{user}'
+  defaults:
+    _form: '\Drupal\hoge\Form\HogeParamForm'
+    _title: 'パラメーター付きフォーム練習'
+  requirements:
+    _permission: 'access content'
+  options:
+    parameters:
+      user:
+        type: entity:user
