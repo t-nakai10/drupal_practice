@@ -19,6 +19,7 @@
         "drupal/custom_breadcrumbs": "^1.0",
         "drupal/diff": "^1.1",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/examples": "^4.0",
         "drupal/feeds": "^3.0@beta",
         "drupal/restui": "^1.21",
         "drupal/rules": "3.x-dev@dev",
