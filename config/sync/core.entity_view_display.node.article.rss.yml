@@ -23,6 +23,7 @@ content:
     region: content
 hidden:
   body: true
+  breadcrumbs: true
   comment: true
   field_image: true
   field_tags: true

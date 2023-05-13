@@ -63,4 +63,5 @@ content:
     weight: 100
     region: content
 hidden:
+  breadcrumbs: true
   langcode: true
