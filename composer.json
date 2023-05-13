@@ -20,6 +20,7 @@
         "drupal/diff": "^1.1",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/feeds": "^3.0@beta",
+        "drupal/restui": "^1.21",
         "drupal/rules": "3.x-dev@dev",
         "drush/drush": "^11.4",
         "vlucas/phpdotenv": "^5.1",
