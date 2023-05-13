@@ -1,0 +1,18 @@
+uuid: 61b71865-b126-4f43-a4e7-78d76c5ecbab
+langcode: ja
+status: false
+dependencies:
+  module:
+    - hoge
+    - serialization
+    - user
+id: hoge_tag_resource
+plugin_id: hoge_tag_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
